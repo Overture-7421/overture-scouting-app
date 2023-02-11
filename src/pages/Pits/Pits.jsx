@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Stack, Form, Button } from "react-bootstrap";
+import { Container, Stack, Form, Button, Row, Col} from "react-bootstrap";
 
 function Pits() {
     return(
         <Container>
         <Form>
-        <Stack gap={2}>
             <h1>Pits</h1>
-            <Stack gap={2} direction="horizontal">
+            <Row className="mb-3" xs={1} lg={2}>
+                <Col className="mt-2">
                 <Stack gap={2}>
                     <Form.Group>
                         <Form.Label>Team Number</Form.Label>
@@ -48,7 +48,9 @@ function Pits() {
                             <option value={"3"}>3</option>
                             </Form.Select>
                     </Form.Group>
-                </Stack>
+                    </Stack>
+                </Col>
+                <Col className="mt-2">
                 <Stack gap={2}>
                     <Form.Group>
                             <Form.Label>Chasis</Form.Label>
@@ -89,9 +91,9 @@ function Pits() {
                             </Form.Select>
                     </Form.Group>
                 </Stack>
-            </Stack>
+                </Col>
+            </Row>
             <Button type="submit">Submit</Button>
-        </Stack>
     </Form>
     </Container>
     );

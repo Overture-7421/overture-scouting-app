@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Stack, Form, Button } from "react-bootstrap";
+import { Container, Stack, Form, Button, Row, Col } from "react-bootstrap";
 
 function Home() {
     return (
             <Container>
             <Form>
-                <Stack gap={2}>
                     <h1>Autonomous</h1>
-                    <Stack gap={2} direction="horizontal">
+                    <Row className="mb-3" xs={1} lg={2}>
+                    <Col className="mt-2">
                         <Stack gap={2}>
                         <Form.Check 
                             type="checkbox" 
@@ -24,7 +24,9 @@ function Home() {
                             label="Agarro Pieza?" 
                             name="agarroPieza" 
                         />
-                        </Stack>  
+                        </Stack> 
+                        </Col> 
+                        <Col className="mt-2">
                         <Stack gap={2}>
                         <Form.Check 
                             type="checkbox" 
@@ -44,9 +46,11 @@ function Home() {
                             </Form.Text>
                         </Form.Group>
                         </Stack>
-                    </Stack>
+                        </Col>
+                    </Row>
                 <h1>Teleoperated</h1>
-                    <Stack gap={2} direction="horizontal">
+                    <Row className="mb-3" xs={1} lg={2}>
+                    <Col className="mt-2">
                         <Stack gap={2}>
                         <Form.Group>
                             <Form.Label>Cantidad de Conos y Cubos</Form.Label>
@@ -69,6 +73,8 @@ function Home() {
                             name="seDescompuso" 
                         />                 
                         </Stack>  
+                        </Col>
+                        <Col className="mt-2">
                         <Stack gap={2}>
                         <Form.Group>
                             <Form.Label>En que niveles puso?</Form.Label>
@@ -82,9 +88,11 @@ function Home() {
                             name="defendio" 
                         />                 
                         </Stack>
-                    </Stack>
+                        </Col>
+                    </Row>
                     <h1>Endgame</h1>
-                    <Stack gap={2} direction="horizontal">
+                    <Row className="mb-3" xs={1} lg={2}>
+                    <Col className="mt-2">
                         <Stack gap={2}>
                         <Form.Group>
                             <Form.Label>Que hizo al final?</Form.Label>
@@ -94,18 +102,21 @@ function Home() {
                             <option value={"Balanceo"}>Balanceo</option>
                             </Form.Select>
                         </Form.Group>                     
-                        </Stack>  
+                        </Stack>
+                        </Col>  
+                        <Col className="mt-2">
                         <Stack gap={2}>
                         <Form.Group>
-                            <Form.Label>Coments</Form.Label>
+                            <Form.Label>Comments</Form.Label>
                             <Form.Control type="text" id="commentarios" />
                             <Form.Text id="passwordHelpBlock" muted>
                             </Form.Text>
                         </Form.Group>
                         </Stack>
-                    </Stack>
-                    <Button type="submit">Submit</Button>
-                    </Stack>
+                        </Col>
+                    </Row>
+                    <Button type="submit" size='lg'>Submit</Button>
+                    
             </Form>
             </Container>
     );
