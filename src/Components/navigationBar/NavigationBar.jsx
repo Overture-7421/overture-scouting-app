@@ -24,6 +24,9 @@ function NavigationBar() {
 								<Nav.Link href="/">Home</Nav.Link>
 							</Nav.Item>
 							<Nav.Item>
+								<Nav.Link href="/Pits">Pits</Nav.Link>
+							</Nav.Item>
+							<Nav.Item>
 								<Nav.Link href="/Teams">Teams</Nav.Link>
 							</Nav.Item>
 						</Nav>
