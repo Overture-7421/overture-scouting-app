@@ -1,7 +1,9 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Router from "./Router";
 
 function App() {
-    return <h1>Temporal</h1>;
+    return <Router />;
 }
 
 export default App;
