@@ -1,8 +1,8 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NavigationBar from "./Components/navigationBar/NavigationBar";
-import Home from "./pages/Home/Home";
-import Pits from "./pages/Pits/Pits";
+import Home from "./pages/Home/home";
+import Pits from "./pages/Pits/pits";
 
 const Router = () => {
     return(
