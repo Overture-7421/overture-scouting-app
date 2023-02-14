@@ -31,7 +31,7 @@ function SignIn(){
 
     return(
         <Stack gap={2} className="col-md-3 mx-auto">
-            <Image scr={logoOverture} alt="Overture Logo" />
+            <Image src={logoOverture} alt="Overture Logo" />
             <h1 className="text-center">Overture Scouting App</h1>
             <div id="firebaseui-auth-container"></div>
             <div id="loader">Loading...</div>
