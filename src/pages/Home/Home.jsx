@@ -100,6 +100,7 @@ function Home() {
                             <option>Elige una opción</option>
                             <option value={"Park"}>Park</option>
                             <option value={"Balanceo"}>Balanceo</option>
+                            <option value={"Puntos"}>Puntos</option>
                             </Form.Select>
                         </Form.Group>                     
                         </Stack>
